@@ -3,24 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Astika Stationary Store</title>
+    <title>Astika Stationary Shop</title>
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Header with Logo, Navigation, Search Bar, and Cart -->
     <header>
-        <h1>Welcome to Astika Stationary Store</h1>
-        <p>Your one-stop shop for stationery, gifts, art supplies, and educational resources.</p>
+        <div class="header-container">
+            <img src="images/astika_logo-removebg-preview.png" alt="Astika Logo" class="logo">
+            <nav class="nav-bar">
+                <ul class="nav-items">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#shop">Shop</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-extras">
+                <form class="search-form" action="#" method="get">
+                    <input type="text" placeholder="Search...">
+                    <button type="submit">Search</button>
+                </form>
+                <div class="cart-icon">
+                    <img src="images/cart.png" alt="Cart">
+                </div>
+            </div>
+        </div>
     </header>
-    
-    <section id="products">
-        <h2>Our Products</h2>
-        <!-- Add product listings here -->
+
+    <!-- Full-Screen Banner Section -->
+    <section id="home" class="banner">
+        <img src="images/chris-adamus-_aNFQ_7RxNc-unsplash.jpg" alt="Banner Image">
     </section>
-    
+
+    <!-- Products Section -->
+    <section id="shop" class="product-section">
+        <h2>Our Featured Products</h2>
+        <div class="product-slider">
+            <div class="product-item">
+                <img src="images/pencil-case.png" alt="Stationery Collection" class="product-img">
+                <p>Stationery Collection</p>
+            </div>
+            <div class="product-item">
+                <img src="images/gift.png" alt="Special Gifts" class="product-img">
+                <p>Special Gifts</p>
+            </div>
+            <div class="product-item">
+                <img src="images/art-supplies.png" alt="Art Supplies" class="product-img">
+                <p>Art Supplies</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section id="newsletter" class="newsletter-section">
+        <div class="content">
+            <h2>Stay Updated!</h2>
+            <p>Subscribe to our newsletter for discounts, updates, and competitions.</p>
+            <form action="#" method="post">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <h3>What is the return policy?</h3>
+            <p class="faq-answer">We offer a 30-day return policy on all items.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Do you offer international shipping?</h3>
+            <p class="faq-answer">Yes, we ship globally with discounted rates on larger orders.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Astika Stationary Store. All rights reserved.</p>
+        <p>&copy; 2024 Astika Stationary Shop. All rights reserved.</p>
     </footer>
 
-    <script src="js/app.js"></script>
+    <script src="js/enhanced-script.js"></script>
 </body>
 </html>
